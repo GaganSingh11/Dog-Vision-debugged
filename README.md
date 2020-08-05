@@ -1,4 +1,4 @@
-# Project-dog-vision
+# Project-dog-vision-AI
 
 ## This notebook builds an End-to-end Multi-Class Image Classifier using Tensorflow Hub.
 
