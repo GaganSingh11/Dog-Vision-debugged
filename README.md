@@ -1,5 +1,5 @@
 
-![Alt Text](https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>)
+![Alt Text](https://img.shields.io/badge/release-v1.0.0-green)
 # Project Dog Vision AI
 
 ## This notebook builds an End-to-end Multi-Class Image Classifier using Tensorflow Hub.
