@@ -13,7 +13,7 @@ Identifying the breed of a dog given an image of a dog
 git clone https://github.com/GaganSingh11/Dog-Vision-debugged.git
 ```
 ```buildoutcfg
-pip install requirement.txt
+pip install -r requirement.txt
 ```
 ```buildoutcfg
 streamlit run DogVisionAI.py 
