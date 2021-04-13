@@ -11,7 +11,7 @@ Identifying the breed of a dog given an image of a dog
 ### Run the following commands to spin this project on your local machine. 
 ```buildoutcfg
 git clone https://github.com/GaganSingh11/Dog-Vision-debugged.git
-``
+```
 **cd inside the project folder**
 ```buildoutcfg
 pip install -r requirement.txt
