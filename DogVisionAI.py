@@ -4,8 +4,6 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
 from PIL import Image
-import io
-import base64
 import time
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
@@ -18,7 +16,7 @@ IMG_SIZE = 224
 # Define a batch size , 32 is a good start 
 BATCH_SIZE = 32
 # Import labels and create an array of 120 dog breeds
-labels_csv = pd.read_csv("/home/gagan/Desktop/Ml-Sample/labels.csv")
+labels_csv = pd.read_csv("assets/labels.csv")
 labels = labels_csv["breed"].to_numpy()
 unique_breeds = np.unique(labels)
 
@@ -51,7 +49,7 @@ if file:
 	data_batch = data.batch(BATCH_SIZE)
 
 	# Load pretrained model and make predictions
-	loaded_full_model = tf.keras.models.load_model('/home/gagan/Desktop/Ml-Sample/20200727-18521595875929-full-image-set-mobilenetv2-Adam.h5',custom_objects={'KerasLayer':hub.KerasLayer})
+	loaded_full_model = tf.keras.models.load_model('assets/20200727-18521595875929-full-image-set-mobilenetv2-Adam.h5', custom_objects={'KerasLayer':hub.KerasLayer})
 	custom_preds = loaded_full_model.predict(data_batch)
 	# Get predicted label
 	custom_pred_labels = [get_pred_label(custom_preds[i]) for i in range(len(custom_preds))]
