@@ -10,7 +10,7 @@ Identifying the breed of a dog given an image of a dog
 **Scenario,** When I am sitting at the Starbucks and I take a photo of a dog, want to know what breed of a dog it is.
 ### Run the following commands to spin this project on your local machine. 
 ```buildoutcfg
-git clone
+git clone https://github.com/GaganSingh11/Dog-Vision-debugged.git
 ```
 ```buildoutcfg
 pip install requirement.txt
